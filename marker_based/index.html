@@ -31,6 +31,24 @@
                 <a-entity id="annyang" annyang-speech-recognition></a-entity>
                 </a-entity>
         </a-marker>
+        
+        <a-marker preset="vasiko" type="pattern" url="./assets/pattern-dpsd.patt">
+            <a-image src="./assets/lydia.jpg" positions="0 0 1" rotation="0 0 0"></a-image> <a-text value="koitathne" positions="0 0 0.3 "></a-text>
+        </a-marker>
+
+
+        <a-marker id="0xygono" type='pattern' url="./assets/pattern-card-O.patt">
+            <a-entity gltf-model="#monkey1" scale="1 1 1" position="0 0 0"
+                      animation__rotate="property: rotation; dur: 5000; easing: linear; dir: normal; from:0 0 0; to: 0 360 0; loop: true;">
+            </a-entity>
+        </a-marker>
+
+        <a-marker id="markerH" type='pattern' url="./assets/hydrogen.patt">
+            <a-entity gltf-model="#monkey1.5" scale="1 1 1" position="0 0 0"
+                      animation__rotate="property: rotation; dur: 5000; easing: linear; dir: normal; from:0 0 0; to: 0 360 0; loop: true;">
+            </a-entity>
+        </a-marker>
+
         <a-entity camera></a-entity>
         </a-scene>
     </body>
