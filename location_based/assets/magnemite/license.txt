@@ -1,0 +1,11 @@
+Model Information:
+* title:	Parthenon Athenes
+* source:	https://sketchfab.com/3d-models/parthenon-athenes-dd3ab49f66a94335810abf319a28efdc
+* author:	3D Slash (https://sketchfab.com/3dslash)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Parthenon Athenes" (https://sketchfab.com/3d-models/parthenon-athenes-dd3ab49f66a94335810abf319a28efdc) by 3D Slash (https://sketchfab.com/3dslash) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
