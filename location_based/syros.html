@@ -16,8 +16,10 @@
 		embedded
         arjs='sourceType: webcam; sourceWidth: 564; sourceHeight: 672; displayWidth: 564; displayHeight: 672; debugUIEnabled: false;'>
 
-        <a-image gps-entity-place="latitude: 44.4908615 ; longitude: 11.3326416;" 
-        src="assets/8a7411d075b92c1d97940066cddf7e78.jpg" position="0 0 0" scale="6 6 6" rotation="0 0 180" ></a-image>
+        <a-entity gps-entity-place="latitude: 37.445577; longitude: 24.943248;" src="assets/8a7411d075b92c1d97940066cddf7e78.jpg" height="1.5" width="1.5" >
+	  <a-text id="text_info" text="Agios Nikolaos" position="0 0 -90" color= "#F4D35E" scale="9 9 9" </a-text>
+              
+	</a-entity>
         
         
         <a-camera gps-camera rotation-reader></a-camera>
