@@ -3,25 +3,25 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>GeoAR.js demo</title>
+    <title>DPSD19013</title>
     <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
     <!-- <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>-->
     <script src='build/aframe-ar-nft.js'></script>
-	
 	<script>
-   		  AFRAME.registerComponent("information", {
-   			init: function() {
-   			let toggle = false
-   			this.el.addEventListener("click", (e) => {
-   		  let text = document.querySelectorAll(".clickable")
-   			text.forEach(function(el) {
-   	    el.setAttribute("visible", toggle)
-   			})
-   				 toggle = !toggle
-   			       })
-   			      }
-   		      })
-   	</script>
+
+        AFRAME.registerComponent("text-show", {
+            init: function () {
+                let toggle = false
+                this.el.addEventListener("click", (e) => {
+                    let entity = document.querySelectorAll(".clickable")
+                    entity.forEach(function (el) {
+                        el.setAttribute("visible", toggle)
+                    })
+                    toggle = !toggle
+                })
+            }
+        })
+    </script>
 </head>
 
 
@@ -31,22 +31,28 @@
 		embedded
 		arjs='sourceType: webcam; debugUIEnabled: false;'>
 	    
-	    <a-text id="text_info" class="clickable" text="value: Kiones in Greece."
-           position="0 0 -90"
-           color= "#F4D35E"
-           scale="7 7 7"
-           visible="false">
-      </a-text>
-
-        <a-entity
-        	gps-entity-place="latitude: 44.506477; longitude: 11.301524;" gltf-model="./assets/magnemite/scene.gltf" rotation="0 180 0" animation-mixer scale="0.015 0.015 0.015"/>
+	     <a-entity id="cameraRig">
+            <a-entity id="head" camera wasd-controls look-controls cursor="rayOrigin: mouse" position="0 0 0"></a-entity>
         </a-entity>
-	<a-entity
-        	gps-entity-place="latitude: 44.506477; longitude: 11.301524;" gltf-model="./assets/parthenon/scene.gltf" rotation="0 180 90" animation-mixer scale="0.015 0.015 0.015"/>
-        </a-entity>
+	    
+            <a-assets>
+            <a-asset-item id="kionas" src="./assets/magnemite/scene.gltf"></a-asset-item>
+        </a-assets>
+        
+           <a-entity position="0 0 0"
+            gltf-model="#kionas" scale="1 1 1" class="click" gps-entity-place="latitude: 37.97945; longitude: 23.71622;" text-show
+            class="clickable"
+		       position="3 5.2 0" rotation="0 0 0"
+		       text="color: #a48111; font-type: bold; align: center; value: Greece!!!; width:4; heigh:3; letterSpacing: 10;"
+                          visible="false">
+			     
+			     </a-entity>
+		    
+		     
 
         <a-camera
-            rotation-reader>
+            rotation-reader
+            gps-camera="simulateLatitude: 37.430886; simulateLongitude: 24.929894; minDistance: 1; maxDistance: 700;">
 		</a-camera>
 	</a-scene>
 </body>
