@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>DPSD19013</title>
+    <title>GeoAR.js demo</title>
     <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
     <!-- <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>-->
     <script src='build/aframe-ar-nft.js'></script>
@@ -36,23 +36,24 @@
         </a-entity>
 	    
             <a-assets>
-            <a-asset-item id="parthenon" src="./assets/scene.gltf"></a-asset-item>
+            <a-asset-item id="pisatower" src="./assets/magnemite/scene.gltf"></a-asset-item>
         </a-assets>
         
-           <a-entity position="-6 -2 -6"
-            gltf-model="#parthenon" scale="5 5 5" class="click" gps-entity-place="latitude: 44.4908615; longitude: 11.3326416;" text-show
-            class="clickable"
-		       position="3 5.2 0" rotation="0 30 0"
-		       text="color: #a48111; font-type: bold; align: center; value: Parthenon; width:4; heigh:3; letterSpacing: 10;"
-                          visible="false">
+             <a-entity position="-0 -0.1 -0.2">
+            <a-entity gltf-model="#partnenon" scale="5 5 5" class="click" gps-entity-place="latitude: 43.716667; longitude: 10.400000;" text-show>
+             <a-entity class="clickable"
+		       position="3 5.2 0"
+		       rotation="0 30 0"
+		       text="color: #a48111; font-type: bold; align: center; value: Hello!; width:4; heigh:3; letterSpacing: 10;"
+                          visible="false"></a-entity>
 			     
 			     </a-entity>
-		    
-		     
+            
+    
 
         <a-camera
             rotation-reader
-            gps-camera="simulateLatitude: 44.4908615; simulateLongitude: 11.3326416; minDistance: 1; maxDistance: 700;">
+            gps-camera="simulateLatitude: 43.716667; simulateLongitude: 10.400000; minDistance: 1; maxDistance: 700;">
 		</a-camera>
 	</a-scene>
 </body>
