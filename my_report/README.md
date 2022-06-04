@@ -26,7 +26,15 @@
 Την κινηση του 3D την βρηκα εδω: https://aframe.io/docs/1.3.0/guides/building-a-basic-scene.html?fbclid=IwAR0Sbj_5H31tD8xZmap1bxleeCaoIC8PWD1n4atU2sh3Lvv24F37pt7KUt8#placing-our-box-in-front-of-the-camera
 
 # 3rd Deliverable 
+Για το 3D αρχειο μου πηγα στο https://sketchfab.com/ και κατεβασα το gltf αρχειο μου.
+Στην συνεχεια πηγα στο https://latitude.to/articles-by-country/gr/greece/853/acropolis-of-athens για να βρω τις συντεταγμενες της ακροπολης.
+Πρόσθεσα το gltf αρχείο που είχα κατεβάσει στον κωδικα ------------>Writing a Component : https://aframe.io/docs/1.3.0/introduction/writing-a-component.html
+                                                                    vr-mode-ui : https://aframe.io/docs/1.3.0/components/vr-mode-ui.html
+                                                                    cameraRig property : https://github.com/aframevr/aframe/issues/3351 
+Μερικες φορες μου τρεχει κανονικα απλα εμφανιζει το 3D μοντελο λιγο περιεργα (σαν να εχει glitch) και αλλες φορες δεν το εμφανιζει ομως καταφερα να αντιμετωπισω το προβλημα που ειχαν πολλοι με την μπλε οθονη που λεει GeoAR.js πανω πανω.
 
+Στο δευτερο σκελος της εργασιας για την Συρο επελεξα τον Αγιο Νικολαο. 
+Αλλαξα τα Latitude και Longitude https://latitude.to/map/gr/greece/cities/agios-nikolaos
 
 # Conclusions
 
